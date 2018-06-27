@@ -1,13 +1,14 @@
 package problem7;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author huylv
  */
 public class Solve {
     public static void main(String[] args) {
-        ArrayList listVehicle = new ArrayList();
+        ArrayList<VanTai> listVehicle = new ArrayList();
 
         Oto oto1 = new Oto();
         Oto oto2 = new Oto();
@@ -30,17 +31,8 @@ public class Solve {
         listVehicle.add(xeTai2);
         listVehicle.add(xeTai3);
 
-        for (Object object : listVehicle) {
-            if (object instanceof XeTai) {
-                XeTai xeTai = (XeTai) object;
-                xeTai.diChuyen();
-            } else if (object instanceof Oto) {
-                Oto oto = (Oto) object;
-                oto.diChuyen();
-            } else {
-                XeDap xeDap = (XeDap) object;
-                xeDap.diChuyen();
-            }
+        for (VanTai object : listVehicle) {
+            object.diChuyen();
         }
     }
 }

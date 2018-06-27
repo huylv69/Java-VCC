@@ -50,8 +50,22 @@ public class Point {
         kc = Math.sqrt(Math.pow(this.x - x, 2) + Math.pow(this.y - y, 2));
         return kc;
     }
+
     @Override
-    public boolean equals(Object obj) {
-        return this.x == ((Point)obj).x && this.y == ((Point)obj).y;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Point point = (Point) o;
+
+        if (x != point.x) return false;
+        return y == point.y;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = x;
+        result = 31 * result + y;
+        return result;
     }
 }
