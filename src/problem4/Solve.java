@@ -40,19 +40,19 @@ public class Solve {
         // Write File Result
         FileWriter writer = new FileWriter("output4.txt");
         for (Point point : listPoints) {
-            writer.write("(" + point.getX() + "," + point.getY()+") \n");
+            writer.write(point.getX() + " " + point.getY() + "\n");
         }
         writer.close();
     }
 
-    public Random position = new Random();
 
-    public Point generate(Point pointCheck, double thresHold, HashSet<Point> set) {
+    public Point generate(Point pointCheck, int thresHold, HashSet<Point> set) {
         Point point;
         do {
-            point = new Point(position.nextInt(40000), position.nextInt(40000));
+            Random position = new Random();
+            point = new Point(position.nextInt(2 * thresHold) + pointCheck.getX() - thresHold, position.nextInt(2 * thresHold) + pointCheck.getY() - thresHold);
         }
-        while ((point.distance(pointCheck) <= thresHold) && !checkInSet(point, set));
+        while ((point.distance(pointCheck) > thresHold) || checkInSet(point, set));
         return point;
     }
 
