@@ -1,0 +1,27 @@
+1. Tài liệu
+OOP core:
+http://www.w3resource.com/java-tutorial/java-object-oriented-programming.php
+
+Concurrency:
+http://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/
+(cái này nó viết bằng syntax của java 8)
+
+Collection(s)
+(Overview) http://cs.lmu.edu/~ray/notes/collections/
+(compare) http://www.codejava.net/java-core/collections/java-collections-framework-summary-table
+(performance) http://infotechgems.blogspot.com/2011/11/java-collections-performance-time.html
+
+String processing:
+http://zetcode.com/lang/java/strings/
+
+I/O:
+(phần rút gọn) http://www.studytonight.com/java/java-io-stream.php
+(phần đầy đủ) http://www.ntu.edu.sg/home/ehchua/programming/java/j5b_io.html
+(phần đầy đủ khá phức tạp, và nhiều phần, em đọc lướt thôi nhé)
+
+Exception
+http://www.journaldev.com/1696/java-exception-handling-tutorial-with-examples-and-best-practices
+
+SQL & JDBC
+Sử dụng được các lệnh Insert, select, update, delete. (Tài liệu tìm trên mạng)
+JDBC: http://www.codejava.net/java-se/jdbc/jdbc-tutorial-sql-insert-select-update-and-delete-examples
